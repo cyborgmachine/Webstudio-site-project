@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css"/>
   </head>
+
   <body>
     
     <header class="header">
@@ -453,10 +454,31 @@
             </li>
           </ul>
 </div>
+
+<form class="sub-form">
+
+<p class="sub-text"> Підпишіться на розсилку</p>
+
+<label for="mail">
+  <input class="footer-input" type="email" placeholder="E-mail" id="mail">
+</label>
+
+<button class="btn-telega">
+
+<p class="text-telega">Підписатися</p>
+
+<svg class="sub-svg" width="24" height="24"><use href="./img/telegram.svg#telegram"></use></svg>
+</button>
+
+
+</form>
+
+
 </div>
+  </footer>
 
-    </footer>
 
+    <!--Modal window Start-->
     <div class="backdrop is-hidden" data-modal>
     
     <div class="modal">
@@ -467,10 +489,80 @@
           </svg>
         </a>
       </button>
+
+      <h3 class="art-modal">Залиште свої дані, ми вам передзвонимо</h3>
+
+
+      <div class="input-collect">
+<label class="modal-label">
+  Ім'я
+  <input type="name" class="modal-input" required>
+  <svg class="svg-modal-icon" width="12px" height="12px">
+    <use href="./img/sprite2.svg#icon-ihuman">
+    </use>
+  </svg>
+  </label>
+</div>
+
+
+<div class="input-collect">
+<label class="modal-label">
+  Телефон
+  
+  <input type="tel" class="modal-input" required>
+  <svg width="13px" height="13px" class="svg-modal-icon">
+    <use href="./img/sprite2.svg#iphone">
+    </use>
+  </svg>
+  </label>
+</div>
+
+
+
+<div class="input-collect">
+<label class="modal-label">
+  Пошта
+  <input type="email" class="modal-input" required>
+  <svg class="svg-modal-icon"width="15px" height="12px">
+    <use href="./img/sprite2.svg#imail">
+    </use>
+  </svg>
+  </label>
+</div>
+
+
+<label class="modal-label">
+  Коментар
+  <textarea class="modal-textarea" placeholder="Введіть текст" name="user-message"> 
+
+  </textarea>
+</label>
+
+
+<!--Checbox-->
+<div class="accept">
+<label class="modal-checkbox">
+  <input type="checkbox" id="accept" name="accept" class="visualy-hidden" required>
+  <div class="checkbox">
+  <svg  width="11px" height="8px" class="svg-checkbox">
+    <use href="./img/itick.svg#itick">
+    </use>
+  </svg></div>
+ <p class="terms-link">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></p> 
+</label>
+</div>
+
+<!--Button-->
+<button class="btn-modal">
+  Відправити
+</button>
+
     </div>
   </div>
 
   <script src="./js/modal.js"></script>
+<!--Modal Window End-->
+
 
   </body>
 </html>
