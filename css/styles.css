@@ -1,38 +1,4 @@
-:root {
-  --primary-color: #2196f3;
-  --simple-color: #000000;
-  --secondary-color: #757575;
-  --mainsection-clor: #2f303a;
-  --item-color: #212121;
-  --background-color: #2f303a;
-  --whole-white-color: #ffffff;
-  --fotter-color: rgba(255, 255, 255, 0.6);
-  --hero-bck-cloror: #f5f4fa;
-  --focus-color: #188ce8;
-  --solid: #ececec;
-  --border-link: #eeeeee;
-}
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: var(--secondary-color);
-  background-color: var(--whole-white-color);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
 
 /* Css Header */
 .header-logo {
@@ -46,14 +12,14 @@ ul {
   text-decoration: none;
 }
 
-.conteiner {
+.container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.conteiner.rulles {
+.container.rulles {
   display: flex;
   align-items: center;
 }
@@ -175,48 +141,11 @@ ul {
 }
 /*STUDIO START!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
 
-.main-button:hover {
-  background-color: var(--focus-color);
-  color: var(--whole-white-color);
-}
 
-.main-button a:focus {
-  color: var(--focus-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.main-button {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
-  background-color: var(--primary-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  padding: 10px 32px;
-  border: none;
-  cursor: pointer;
-  margin-top: 30px;
-  color: var(--whole-white-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .main-section {
-  background-color: var(--mainsection-clor);
+  background-color: var(--mainsection-color);
   color: var(--whole-white-color);
   text-align: center;
   padding-top: 200px;
@@ -264,7 +193,7 @@ ul {
 }
 
 .section {
-  background-color: var(--hero-bck-cloror);
+  background-color: var(--hero-bck-color);
   padding-bottom: 94px;
   padding-top: 94px;
 }
@@ -294,7 +223,7 @@ ul {
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
-  background-color: var(--hero-bck-cloror);
+  background-color: var(--hero-bck-color);
   align-content: stretch;
   justify-content: space-around;
   align-items: center;
